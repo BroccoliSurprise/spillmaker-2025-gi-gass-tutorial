@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v2.0.56/---simulator","cdnUrl":"https://cdn.makecode.com","version":"1.0.0","target":"arcade","targetVersion":"2.0.56","repo":"broccolisurprise/spillmaker-2025-gi-gass-tutorial"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v2.0.56/---simulator","cdnUrl":"https://cdn.makecode.com","version":"1.0.1","target":"arcade","targetVersion":"2.0.56","repo":"broccolisurprise/spillmaker-2025-gi-gass-tutorial"}
 // total=2184877 new=23.47% cached=72.42% other=4.12%
 (function (ectx) {
 'use strict';
@@ -534,7 +534,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P322727(s) {
+function _main___P322847(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1014,13 +1014,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P322727.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P322727.continuations = [  ]
+_main___P322847.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P322847.continuations = [  ]
 
-function _main___P322727_mk(s) {
+function _main___P322847_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P322727, depth: s.depth + 1,
+        parent: s, fn: _main___P322847, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -6632,8 +6632,8 @@ switch (step) {
   case 0:
 
     s.value___306634 = undefined;
-    s.unnamed4058___U1 = undefined;
-    s.unnamed4059___U2 = undefined;
+    s.unnamed4090___U1 = undefined;
+    s.unnamed4091___U2 = undefined;
     s.tmp_0 = sprites_allOfKind__P301996_mk(s);
     s.tmp_0.arg0 = globals.Enemy___302203;
     s.callLocIdx = 78; s.pc = 5; return s.tmp_0;
@@ -6641,15 +6641,15 @@ switch (step) {
     r0 = s.retval;
     globals.list___304072 = (r0);
     s.value___306634 = (undefined);
-    s.unnamed4058___U1 = (globals.list___304072);
-    s.unnamed4059___U2 = (0);
+    s.unnamed4090___U1 = (globals.list___304072);
+    s.unnamed4091___U2 = (0);
   case 1:
-    s.tmp_0 = r0 = s.unnamed4059___U2;
-    r0 = pxsim_Array__length(s.unnamed4058___U1);
+    s.tmp_0 = r0 = s.unnamed4091___U2;
+    r0 = pxsim_Array__length(s.unnamed4090___U1);
     s.tmp_1 = r0;
     r0 = (s.tmp_0 < s.tmp_1);
     if (!r0) { step = 4; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed4058___U1, s.unnamed4059___U2);
+    r0 = pxsim_Array__getAt(s.unnamed4090___U1, s.unnamed4091___U2);
     s.value___306634 = (r0);
     s.tmp_2 = Sprite_setScale__P302151_mk(s);
     s.tmp_2.arg0 = s.value___306634;
@@ -6696,11 +6696,11 @@ switch (step) {
     r0 = s.retval;
   case 2:
   case 3:
-    r0 = (s.unnamed4059___U2 + 1);
-    s.unnamed4059___U2 = (r0);
+    r0 = (s.unnamed4091___U2 + 1);
+    s.unnamed4091___U2 = (r0);
     { step = 1; continue; }
   case 4:
-    s.unnamed4058___U1 = (undefined);
+    s.unnamed4090___U1 = (undefined);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
@@ -6718,8 +6718,8 @@ function updateRoad__P304069_mk(s) {
   tmp_3: undefined,
   tmp_4: undefined,
   value___306634: undefined,
-  unnamed4058___U1: undefined,
-  unnamed4059___U2: undefined,
+  unnamed4090___U1: undefined,
+  unnamed4091___U2: undefined,
 } }
 
 
@@ -59672,5 +59672,5 @@ const sprites_BaseSpriteSayRenderer__C301977_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["fart___304074","mySprite2___304073","list___304072","mySprite___304071"])
 
-return _main___P322727
+return _main___P322847
 })
