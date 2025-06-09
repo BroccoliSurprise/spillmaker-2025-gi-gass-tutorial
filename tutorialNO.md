@@ -155,10 +155,10 @@ Nå skal vi legge til en blokk som skal ligge **utenfor** ``||loops(noclick): on
 
 - :circle: Klikk på ``||game: Game||`` kategorien og finn 
 ```block
-game.onUpdateInterval(500) {
+game.onUpdateInterval(2000) {
 })
 ```
-Legg den hvor du vil, og klikk på tallet for å endre 500 til **2000**.
+Legg den hvor du vil, og om nødvendig klikker du på tallet for å endre til **2000** eller et annet tall du syns er passe stort.
 
 
 #### ~ tutorialhint
@@ -184,9 +184,9 @@ game.onUpdateInterval(2000, function()) {
 
 ## {Steg 7 - Juksa litt}
 
-Har du sett de to blå ``||functions(noclick): function||``-blokkene som vi nevnte i starten? Her har vi gjort klar litt kode for deg som vi nå skal bruke!
+Har du lagt merke til de to blå ``||functions(noclick): function||``-blokkene som har lagt her hele tiden? Her har vi gjort klar litt kode for deg som vi nå skal bruke!
 
-- :function: Klikk på ``||functions: Functions||`` kategorien og finn ``||functions(noclick):call createObstacle||``.
+- :function: Klikk på ``||Advanced: Advanced||`` og så ``||functions: Functions||`` kategorien og finn ``||functions(noclick):call createObstacle||``.
 Legg denne inni ``||game(noclick): on game update ||``-blokken.
 
 Se på horisonten. Dukker det opp blå biler?
@@ -372,7 +372,6 @@ game.onUpdateInterval(2000) {}
 ```
 
 ```template
-
 
 let list: Sprite[] = []
 let mySprite2: Sprite = null
