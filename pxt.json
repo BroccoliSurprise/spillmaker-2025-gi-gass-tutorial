@@ -1,6 +1,6 @@
 {
     "name": "spillmaker-2025-gi-gass-tegnebiten",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "",
     "dependencies": {
         "device": "*"
