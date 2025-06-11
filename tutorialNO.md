@@ -9,13 +9,12 @@ Velkommen! I dag skal vi lage et bilspill som kommer til å se slik ut:
 
 Underveis i veiledningen viser vi deg hvordan du kan endre på hvordan bilene ser ut, hvor fort de skal kjøre, og mye mer. 
 
-PS! 👀 Det ligger litt kode inne i programmet allerede. Vi anbefaler at du lar den ligge i fred inntil videre, vi kommer til å få bruk for den.
+PS! 👀 Vi har gjort klar litt kode inne i programmet. <br>
+Vi kommer til å få bruk for de ``||functions(noclick):BLÅ||`` kodeklossene senere, så de bør få ligge i fred nå i starten.
 
 ## {Steg 2 - bakgrunnsbilde}
 
 **Vi er klare!**
-
-Vi har gjort klar litt kode for deg som vi skal bruke senere. Det som ligger i de to ``||functions(noclick): blå||`` blokkene må få ligge i fred foreløpig.
 
 - :game: Se på den grønne ``||loops(noclick): on start||`` blokken som ligger til høyre her. Inni den ligger denne blokken:
 ```block
@@ -168,7 +167,7 @@ Legg den hvor du vil.
 
 ---
 
-ms står for "millisekund", så 2000 millisekund = 2 sekunder. Tusendeler av et sekund er veldig fort for oss mennesker, men det 🐌sneglefart🐌 for dagens datamaskiner.
+ms står for "millisekund", så 2000 millisekund = 2 sekunder. Tusendeler av et sekund er veldig fort for oss mennesker, men det er <br>🐌sneglefart🐌<br> for dagens datamaskiner.
 
 hint~
 
@@ -230,7 +229,7 @@ mySprite.setStayInScreen(true)
 
 game.onUpdateInterval(2000, function () {
     //@highlight
-    createObstacle
+    call.createObstacle
 })
 
 
@@ -244,7 +243,7 @@ For å få de blå bilene til å bevege seg, må vi tilbake til ``||loops(noclic
 - :list: I blokken vi nå skal hente, må vi endre på **2** ting.
 Klikk på ``||variables: variables||`` og finn 
 ```block
-mySprite = 0
+value = 0
 ```
 Klikk på den lille hvite pilen og bytt til ``||variables(noclick): fart|``. Så kan du bytte ut tallet ``||variables(noclick): 0|`` med f.eks. 20.
 
@@ -254,7 +253,7 @@ Klikk på den lille hvite pilen og bytt til ``||variables(noclick): fart|``. Så
 
 Variabler er en slags bokser du kan lagre forskjellige typer informasjon oppi. Når vi setter verdien til FART i starten av programmet, kan createObstacle-funksjonen lese denne verdien og bruke den for å sende de blå bilene avgårde. 
 
-Hvis du senere har lyst til å programmere en gasspedal som lar deg kjøre fortere i spillet, trenger du bare noe som gjør "Når knapp A trykkes, gjør variabelen FART større"
+Hvis du senere har lyst til å programmere en gasspedal som lar deg kjøre fortere i spillet, trenger du bare noe som gjør <br>"Når knapp A trykkes, gjør variabelen FART større"
 
 hint~
 
@@ -306,17 +305,15 @@ Siste steg!
 
 For å gi en bedre illusjon av bevegelse, har vi laget klar litt en komplisert funksjon ``||functions(noclick):updateRoad||``  som endrer størrelsen på de blå bilene mens de beveger seg.
 
-Alt du behøver å gjøre, er å legge til ``||functions(noclick): updateRoad||`` i en løkke som skal gå ``||game(noclick): uten pause||``. 
+Alt du behøver å gjøre, er å legge til ``||functions(noclick): call updateRoad||`` i en løkke som skal gå ``||game(noclick): uten pause||``. 
 
 ```blocks
 game.onUpdate(function () {
-    updateRoad()
+    call.updateRoad()
 })
-function updateRoad= (){}
-
 
 ```
-... Men er du nysgjerrig kan du lese litt om de ulike blokkene her:
+Hvis du er nysgjerrig på hvordan updateRoad-funskjonen virker, kan du lese litt om de ulike blokkene her:
 
 ~hint set sprite scale 🤏
 
