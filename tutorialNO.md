@@ -13,17 +13,17 @@ PS! 👀 Det ligger litt kode inne i programmet allerede. Vi anbefaler at du lar
 
 ## {Steg 2 - bakgrunnsbilde}
 
-**Er du klar?**
+**Vi er klare!**
 
-Først trenger vi et fint bakgrunnsbilde.
+Vi har gjort klar litt kode for deg som vi skal bruke senere. Det som ligger i de to ``||functions(noclick): blå||`` blokkene må få ligge i fred foreløpig.
 
-- :tree: Klikk på ``||scene: Scene||`` kategorien  **i verktøyskrinet** og finn denne blokken
+- :game: Se på den grønne ``||loops(noclick): on start||`` blokken som ligger til høyre her. Inni den ligger denne blokken:
 ```block
 scene.setBackgroundImage(assets.image`bakgrunn1`)
 ```
-Klikk og dra den ut i programmet og sett den inni den grønne <br/>
-``||loops(noclick): on start||`` <br/>
-blokken. 
+Denne blokken gjør at vi får et fint bakgrunnsbilde når spillet starter. 
+
+
 
 ~hint Har du lyst på et annet bilde? 🖼
 
@@ -31,6 +31,10 @@ blokken.
 
 Klikker du på bildet inni den grå blokken kan du tegne din egen bakgrunn, men 
 vi anbefaler at du venter med dette til du har laget spillet ferdig.
+
+hint~
+
+~hint Trykk på ➡NEXT for å fortsette, eller 💡 lyspæren for et hint
 
 hint~
 
@@ -46,11 +50,11 @@ scene.setBackgroundImage(assets.image`bakgrunn1`)
 
 Nå skal vi legge til bilen vår.
 
-- :paper plane: Klikk på ``||sprites: Sprite||`` kategorien  **i verktøyskrinet** og finn 
+- :paper plane: Klikk på ``||sprites: Sprite||`` kategorien  **i verktøyskrinet** og finn denne blokken
 ```block
 mySprite = sprites.create(assets.image`redCar`, SpriteKind.Player)
 ```
-Legg denne også inn i den grønne <br/>
+Klikk og dra den ut i programmet og sett den nederst i den grønne <br/>
 ``||loops(noclick): on start||`` <br/>
 blokken. 
 
@@ -63,7 +67,7 @@ Du kan klikke på den røde bilen og redesigne den akkurat slik du vil! Her er d
 
 hint~
 
-~hint Hva er en Sprite? 💡
+~hint Hva er en Sprite? 🏃‍♂️
 
 ---
 
@@ -158,7 +162,15 @@ Nå skal vi legge til en blokk som skal ligge **utenfor** ``||loops(noclick): on
 game.onUpdateInterval(2000) {
 })
 ```
-Legg den hvor du vil, og om nødvendig klikker du på tallet for å endre til **2000** eller et annet tall du syns er passe stort.
+Legg den hvor du vil. 
+
+~hint Hva betyr ms?
+
+---
+
+ms står for "millisekund", så 2000 millisekund = 2 sekunder. Tusendeler av et sekund er veldig fort for oss mennesker, men det 🐌sneglefart🐌 for dagens datamaskiner.
+
+hint~
 
 
 #### ~ tutorialhint
