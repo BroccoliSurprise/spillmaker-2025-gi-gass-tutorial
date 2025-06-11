@@ -1,4 +1,5 @@
 function createObstacle () {
+    let fart = 0
     mySprite2 = sprites.create(assets.image`blueCar`, SpriteKind.Enemy)
     mySprite2.setPosition(randint(40, 120), 70)
     if (fart) {
@@ -15,27 +16,6 @@ function updateRoad () {
         }
     }
 }
-sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Player, function (sprite, otherSprite) {
-    info.changeScoreBy(-1)
-    sprites.destroy(sprite, effects.disintegrate, 500)
-    scene.cameraShake(4, 500)
-})
-function createPlayer () {
-    mySprite = sprites.create(assets.image`redCar`, SpriteKind.Player)
-    mySprite.setPosition(80, 100)
-    controller.moveSprite(mySprite, 100, 0)
-    mySprite.setStayInScreen(true)
-}
-let mySprite: Sprite = null
 let list: Sprite[] = []
 let mySprite2: Sprite = null
-let fart = 0
 scene.setBackgroundImage(assets.image`bakgrunn1`)
-createPlayer()
-fart = 20
-game.onUpdate(function () {
-    updateRoad()
-})
-game.onUpdateInterval(2000, function () {
-    createObstacle()
-})

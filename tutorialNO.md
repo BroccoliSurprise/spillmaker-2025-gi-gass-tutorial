@@ -375,7 +375,7 @@ game.onUpdateInterval(2000) {}
 
 let list: Sprite[] = []
 let mySprite2: Sprite = null
-
+scene.setBackgroundImage(assets.image`bakgrunn1`)
 
 
 function createObstacle () {
