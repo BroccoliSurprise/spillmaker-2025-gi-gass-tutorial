@@ -305,14 +305,10 @@ Siste steg!
 
 For å gi en bedre illusjon av bevegelse, har vi laget klar litt en komplisert funksjon ``||functions(noclick):updateRoad||``  som endrer størrelsen på de blå bilene mens de beveger seg.
 
-Alt du behøver å gjøre, er å legge til ``||functions(noclick): call updateRoad||`` i en løkke som skal gå ``||game(noclick): uten pause||``. 
+Alt du behøver å gjøre, er å legge til ``||functions(noclick):updateRoad||`` i en løkke som skal gå ``||game(noclick): uten pause||``. Husker du hvor de blå funksjonblokkene lå?
 
-```blocks
-game.onUpdate(function () {
-    call.updateRoad()
-})
+![Bilde av riktig kode](https://st-vilvite2022.nf.cdn.netflexapp.com/1750515159/call-updateroad.png "Kodehint")
 
-```
 Hvis du er nysgjerrig på hvordan updateRoad-funskjonen virker, kan du lese litt om de ulike blokkene her:
 
 ~hint set sprite scale 🤏
